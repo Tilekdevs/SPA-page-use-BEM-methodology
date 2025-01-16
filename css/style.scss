@@ -1,0 +1,339 @@
+$font-family: 'Montserrat', serif;
+$primary-color: #156963;
+$secondary-color: #2c1500;
+$white: #ffffff;
+$btn-height: 36px;
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: $font-family;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: italic;
+	max-width: 1280px;
+	max-height: 2947px;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 90px;
+	margin: 0 20px;
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+
+	.logo {
+		margin-left: 100px;
+
+		a img {
+			display: block;
+		}
+	}
+
+	.menu {
+		display: flex;
+
+		ul {
+			display: flex;
+			list-style: none;
+
+			.menu__item-img {
+				padding: 0 20px;
+
+				a img {
+					display: block;
+				}
+			}
+
+			.menu__item-signUp button,
+			.menu__item-signIn button {
+				width: 110px;
+				height: $btn-height;
+			}
+
+			.menu__item-signUp button {
+				background: transparent;
+				color: $primary-color;
+			}
+
+			.menu__item-signIn button {
+				background: $primary-color;
+				color: $white;
+			}
+		}
+	}
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+
+	&__promo {
+		display: flex;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		position: relative;
+
+		.main__wrapper img {
+			object-fit: cover;
+			width: 100%;
+		}
+
+		.main__about {
+			display: flex;
+			flex-direction: column;
+			text-align: start;
+			margin: 0 auto;
+			width: 400px;
+
+			.main__text {
+				width: 100%;
+				margin-bottom: 100px;
+
+				h1 {
+					font-size: 68px;
+					font-weight: 500;
+					color: $primary-color;
+					margin-bottom: 20px;
+				}
+
+				p {
+					font-size: 18px;
+					font-weight: 400;
+					color: $secondary-color;
+				}
+			}
+
+			.main__prev-btn {
+				display: flex;
+				width: 100%;
+
+				.prev,
+				.next {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					padding: 10px;
+					font-size: 32px;
+					font-weight: 500;
+
+					p {
+						font-size: 24px;
+						display: flex;
+						align-items: center;
+						gap: 20px;
+					}
+
+					img {
+						width: 21px;
+					}
+				}
+
+				.prev {
+					background: transparent;
+					color: $primary-color;
+				}
+
+				.next {
+					background: $primary-color;
+					color: $white;
+				}
+			}
+		}
+	}
+
+	.bannerExcellence {
+		position: relative;
+		margin: 142px 0 80px 0;
+		width: 100%;
+		z-index: 0;
+		display: flex;
+		justify-content: space-between;
+		padding: 0 50px 0 50px;
+		
+		.main__articleBanner {
+			width: 268px;
+			height: auto;
+			border: 1px solid #E0E0E0;
+			padding: 10px;
+		}
+
+		.main__excellence {
+			display: flex;
+			width: 100%;
+			justify-content: space-around;
+
+			.iconTitle {
+				display: flex;
+				align-items: center;
+				gap: 20px;
+
+				img {
+					display: block;
+					margin-bottom: 10px;
+				}
+
+				h3 {
+					font-size: 18px;
+					color: $primary-color;
+					font-weight: 700;
+				}
+			}
+
+			p {
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 16px;
+			}
+		}
+	}
+
+	.featuredPlants {
+		padding: 0 50px 0 50px;
+		margin-bottom: 89px;
+
+		.main__productTitle {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 10px;
+			align-items: center;
+
+			button {
+				background: transparent;
+				border: 1px solid #E0E0E0;
+				width: 130px;
+				height: 31px;
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+			}
+		}
+
+		.main__lineProduct {
+			height: 1px;
+			background: #E0E0E0;
+			width: 100%;
+		}
+
+		.main__product {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 24px;
+
+			.articleProduct {
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				font-size: 16px;
+
+				p{ 
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
+	.aboutPlants {
+		padding: 0 50px 0 50px;
+		margin-bottom: 80px;
+
+		.main__aboutBuy {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		.main__aboutText {
+			width: 429px;
+			height: auto;
+
+			h1 {
+				font-weight: 700;
+				font-size: 40px;
+				margin-bottom: 16px;
+			}
+
+			p {
+				font-size: 16px;
+				color: #2C1500;
+				margin-bottom: 160px;
+			}
+		}
+	}
+	.ourShop {
+		padding: 0 50px 0 50px;
+		margin-bottom: 80px;
+
+		.main__favoritePlants {
+			background: #F3F4F6;	
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+		}
+
+		.main__bidText {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			width: 583px;
+			height: 184px;
+
+			h1 {
+				font-weight: 700;
+				font-size: 40px;
+			}
+
+			button {
+				background: #156963;
+				color: white;
+				width: 152px;
+				height: 40px;
+			}
+		}
+	}
+}
+
+.footer {
+	width: 100%;
+	text-align: center;
+	padding: 0 50px 0 50px;
+
+	.footer__line {
+		height: 1px;
+		background: #156963;
+	}
+
+	&__aboutUs {
+		display: flex;
+		align-items: center;
+
+	}
+	&__logo {
+		h2 {
+			font-weight: 500;
+			font-size: 24px;
+			color: #156963;
+		}
+	}
+	&__address {
+		h5 {
+			font-weight: 500;
+			font-size: 16px;
+		}
+		p {
+			color: #4F4F4F;
+		}
+	}
+}
