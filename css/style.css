@@ -21,7 +21,7 @@ button {
   justify-content: space-between;
   align-items: center;
   height: 90px;
-  margin: 0 20px;
+  margin: 0 20px 0 -57px;
   width: 100%;
   position: absolute;
   z-index: 1;
@@ -102,9 +102,6 @@ button {
 }
 .main__promo .main__about .main__prev-btn .prev,
 .main__promo .main__about .main__prev-btn .next {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 10px;
   font-size: 32px;
   font-weight: 500;
@@ -315,7 +312,7 @@ button {
   gap: 10px;
 }
 .footer__aboutUs:last-child input {
-  border: 1px solid #F2F2F2;
+  border: none;
   height: 32px;
 }
 .footer__aboutUs:last-child button {
